@@ -1,0 +1,70 @@
+.logo{
+    font-size: 20px;
+}
+
+:root{
+    --primary-color:white;
+    --secondary-color:black;
+}
+
+.dark-theme{
+    --primary-color:black;
+    --secondary-color:white;
+}
+
+body{
+    background:var(--primary-color);
+    transition: background 0.4s, color 0.4s;
+}
+
+.logo{
+    color:var(--secondary-color);
+}
+
+.content{
+   text-align: center;
+    margin-top:170px;
+    font-size: 22px;
+    color:var(--secondary-color);
+}
+
+span{
+    color: blue;
+}
+
+.btn{
+    width: 130px;
+    height: 40px;
+    border-radius: 30px;
+    border: none;
+    background: linear-gradient(45deg,#43cea2,#185a9d);
+    color: white;
+    cursor: pointer;
+}
+
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+
+img{
+    width:15px;
+    height: 15px;
+    position: fixed;
+    margin-left: 1250px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:770px){
+.btn{
+        font-size: 17px;
+    }
+    
+img{
+    width:20px;
+    height: 20px;
+    position: fixed;
+    margin-left: 370px;
+    cursor: pointer;
+}
+}
